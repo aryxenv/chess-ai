@@ -46,7 +46,7 @@ Available at: https://l145.be/nnue-chessbot
 1.  **Clone the repository**:
 
     ```bash
-    git clone https://github.com/l145dev/chess-ai.git
+    git clone https://github.com/aryxenv/chess-ai.git
     cd chess-ai
     ```
 
@@ -123,4 +123,4 @@ MIT
 
 ## Author
 
-- **Aryan Shah** - [GitHub](https://github.com/l145dev)
+- **Aryan Shah** - [GitHub](https://github.com/aryxenv)
