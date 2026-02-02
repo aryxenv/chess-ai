@@ -4,7 +4,7 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.l145.be",
+  site: "https://www.aryxenv.dev",
   base: "/nnue-chessbot",
   integrations: [react()],
   output: "static",

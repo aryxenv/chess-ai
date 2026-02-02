@@ -14,7 +14,7 @@ load_dotenv()
 
 app = FastAPI()
 
-origins = ["https://www.l145.be", "https://l145.be"]
+origins = ["https://www.aryxenv.dev", "https://aryxenv.dev"]
 
 if os.getenv("ENVIRONMENT") == "development":
     origins.append("http://localhost:4321")

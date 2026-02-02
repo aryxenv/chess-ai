@@ -1,3 +1,3 @@
-nnue-chessbot-api.l145.be {
+nnue-chessbot-api.aryxenv.dev {
     reverse_proxy chess-backend-container:80
 }

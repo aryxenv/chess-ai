@@ -4,9 +4,9 @@ A modern, interactive web interface for the Neural Network Updated Evaluation (N
 
 ## Deployment
 
-- **Frontend**: Combell
+- **Frontend**: Cloudflare Pages
 
-Available at: https://l145.be/nnue-chessbot
+Available at: https://aryxenv.dev/nnue-chessbot
 
 ## Features
 

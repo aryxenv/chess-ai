@@ -5,9 +5,9 @@ Agentic Chess AI featuring a custom NNUE engine and C# PGN pipeline. Web UI Buil
 ## Deployment
 
 - **Backend**: Azure VM (Containerized w/ Docker)
-- **Frontend**: Combell
+- **Frontend**: Cloudflare Pages
 
-Available at: https://l145.be/nnue-chessbot
+Available at: https://aryxenv.dev/nnue-chessbot
 
 ## Features
 
