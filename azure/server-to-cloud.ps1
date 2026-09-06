@@ -46,7 +46,7 @@ Write-Host "☁️ Uploading payload..." -ForegroundColor Yellow
 # Remove old build folder on server first
 ssh -i $keyPath -o StrictHostKeyChecking=no ${remoteUser}@${vmIp} "rm -rf ~/chessbot_build"
 # Upload new clean bundle
-scp -i $keyPath -r $tempDir "${remoteUser}@${vmIp}:~/chessbot_build"
+scp -i $keyPath -o StrictHostKeyChecking=no -r $tempDir "${remoteUser}@${vmIp}:~/chessbot_build"
 
 # 4. Build & Run
 Write-Host "Building and Running on VM..." -ForegroundColor Yellow
@@ -68,7 +68,7 @@ $commands = @(
     "sudo docker run -d -p 80:80 -p 443:443 --net chess-net --name caddy-container --restart always -v `$(pwd)/Caddyfile:/etc/caddy/Caddyfile -v caddy_data:/data caddy:alpine"
 )
 
-ssh -i $keyPath ${remoteUser}@${vmIp} ($commands -join " && ")
+ssh -i $keyPath -o StrictHostKeyChecking=no ${remoteUser}@${vmIp} ($commands -join " && ")
 
 # 5. Cleanup Local Temp
 Remove-Item -Recurse -Force $tempDir

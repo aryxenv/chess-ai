@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MODEL_ROUTER = "llama-3.1-8b-instant"
-MODEL_SOLVER = "llama-3.3-70b-versatile"
+MODEL_ROUTER = "groq/compound-mini"
+MODEL_SOLVER = "groq/compound"
 START_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 
 client = Groq(
