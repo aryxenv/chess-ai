@@ -1,5 +1,6 @@
 *.yml
 !lib/versioning.yml
+!.github/**/*.yml
 **/__pycache__
 lichess_bot_auto_logs/*
 .vscode/*

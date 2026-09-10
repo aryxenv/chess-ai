@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy folders (Context is project root)
 COPY engines/bot /app/engines/bot
 COPY server /app/server
-COPY .env .
+COPY .env* ./
 
 ENV PYTHONPATH=/app
 ENV ENVIRONMENT=production
