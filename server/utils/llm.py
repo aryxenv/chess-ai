@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 MODEL_ROUTER = "groq/compound-mini"
-MODEL_SOLVER = "groq/compound"
+MODEL_SOLVER = "openai/gpt-oss-20b"
 START_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 
 client = Groq(
